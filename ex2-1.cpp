@@ -2,18 +2,11 @@
 
 using namespace std;
 
-double factorial(int n) {
-    if (n == 0)
-        return 1.0;
-
-    return (double) n * factorial(n-1);
-}
-
 long combination(int n, int r) {
     if (r == 0 || r == n)
-        return 1L;
+        return 1;
     
-    return factorial(n-1)/factorial(n-r-1)/factorial(r) + combination(n-1, r-1);
+    return combination(n-1, r-1) + combination(n-1, r);
 }
 
 int main() {
