@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>
+#include <string> // 문자열 처리시 필요한 라이브러리
 using namespace std;
 
 int main() {
