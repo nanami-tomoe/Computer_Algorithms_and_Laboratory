@@ -70,6 +70,8 @@ void print_encryption(unsigned int e[], int length) {
 }
 
 int main() {
+    cout << message << endl; // 원래 문자열 출력
+
     MESSAGE_LENGTH = message.length();
 
     encryption = new unsigned int[MESSAGE_LENGTH];
