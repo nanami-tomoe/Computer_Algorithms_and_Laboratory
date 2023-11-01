@@ -84,8 +84,6 @@ int main() {
     int d = n->second; // 1. 비밀키 d값 얻기
     d = (d % phi_N + phi_N) % phi_N;
 
-    cout << d << endl;
-
     // 2. 문자열을 한글자씩 읽어 암호화
     for (int i = 0; i < MESSAGE_LENGTH; i++) { 
         int c = (unsigned int) message.at(i); 
